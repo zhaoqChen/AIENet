@@ -44,7 +44,7 @@ python test.py --task [dehaze | derain] --gpu_id [gpu_id] --indir [input directo
 ## Results
 Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising.
 
-<img src = "https://github.com/zhaoqChen/AIENet/blob/main/imgs/quantitative comparisons.png" width="700">
+<p align="center"><img src = "https://github.com/zhaoqChen/AIENet/blob/main/imgs/quantitative comparisons.png" width="700"></p>
 
 ## Contact
 Should you have any question, please contact zhaoq_chen@163.com
