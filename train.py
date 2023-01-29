@@ -26,7 +26,7 @@ parser.add_argument('--lr_gamma', type=float, default=0.1)
 parser.add_argument('--weight_decay', type=float, default=0.0005)
 
 #---------save dir---------------#
-parser.add_argument('--checkpoints_dir', default='./checkpoint')
+parser.add_argument('--checkpoints_dir', default='checkpoint')
 parser.add_argument('--logDir', default='tblogdir')
 
 #---------save checkpoints setting-------------#
@@ -101,11 +101,9 @@ if opt.do_test:
 total_inc = opt.inc if opt.no_edge else opt.inc + 1
 
 # ----------------network initialize -------------------- #
-anchors_mask    = [[6, 7, 8], [3, 4, 5], [0, 1, 2]]
-
 if opt.network == 'AIENet':
     from AIENet import AIENet
-    net = dehaze5(anchors_mask, 20, 'l', pretrained=False)
+    net = AIENet()
 else:
     print('network structure %s not supported' % opt.network)
     raise ValueError
