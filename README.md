@@ -9,8 +9,8 @@ Zhaoqi Chen, Chuansheng Wang, Fuquan Zhang, and Antoni Grau
 ## Network Architecture
 <table>
   <tr>
-    <td> <img src = "https://i.imgur.com/69c0pQv.png" width="500"> </td>
-    <td> <img src = "https://i.imgur.com/JJAKXOi.png" width="400"> </td>
+    <td> <img src = "https://github.com/zhaoqChen/AIENet/blob/main/imgs/model.png" width="500"> </td>
+    <td> <img src = "https://github.com/zhaoqChen/AIENet/blob/main/imgs/block.png" width="400"> </td>
   </tr>
   <tr>
     <td><p align="center"><b>Overall Framework of AIENet</b></p></td>
