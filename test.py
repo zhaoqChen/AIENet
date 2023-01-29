@@ -50,10 +50,9 @@ test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False,
                              collate_fn=var_custom_collate, pin_memory=True,
                              num_workers=1)
 
-anchors_mask    = [[6, 7, 8], [3, 4, 5], [0, 1, 2]]
 if opt.network == 'AIENet':
     from AIENet import AIENet
-    net = AIENet(anchors_mask, 20, 'l', pretrained=False)
+    net = AIENet()
 else:
     print('network structure %s not supported' % opt.network)
     raise ValueError
