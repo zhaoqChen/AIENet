@@ -26,23 +26,20 @@ For installing, follow these intructions
 conda create -n torch1.8 python=3.8
 conda activate torch1.8
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-pip install matplotlib scikit-image opencv-python joblib natsort h5py tqdm
-```
-
-## Quick Run
-
-To test the pre-trained models of [Deblurring](https://drive.google.com/file/d/1QwQUVbk6YVOJViCsOKYNykCsdJSVGRtb/view?usp=sharing), [Deraining](https://drive.google.com/file/d/1O3WEJbcat7eTY6doXWeorAbQ1l_WmMnM/view?usp=sharing), [Denoising](https://drive.google.com/file/d/1LODPt9kYmxwU98g96UrRA0_Eh5HYcsRw/view?usp=sharing) on your own images, run 
-```
-python demo.py --task Task_Name --input_dir path_to_images --result_dir save_images_here
-```
-Here is an example to perform Deblurring:
-```
-python demo.py --task Deblurring --input_dir ./samples/input/ --result_dir ./samples/output/
+pip install matplotlib scikit-image opencv-python tqdm
 ```
 
 ## Training and Evaluation
 
-Training and Testing codes for deblurring, deraining and denoising are provided in their respective directories.
+To train the pre-trained models of image dehazy, image motion deblur and image compression deblur on your own images, run 
+```
+python train.py --task Task_Name --gpu_id gpu_id --indir input_directory --outdir output_directory
+```
+
+For testing, please run:
+```
+python test.py --task [dehaze | derain] --gpu_id [gpu_id] --indir [input directory] --outdir [output directory]
+```
 
 ## Results
 Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising.
