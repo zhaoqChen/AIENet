@@ -31,14 +31,14 @@ pip install matplotlib scikit-image opencv-python tqdm
 
 ## Training and Evaluation
 
-To train the pre-trained models of image dehazy, image motion deblur and image compression deblur on your own images, run 
+To train the models of image dehazy, image motion deblur and image compression deblur on your own images, run 
 ```
-python train.py --task Task_Name --gpu_id gpu_id --indir input_directory --outdir output_directory
+python train.py --task task_name --gpu_id gpu_id --indir input_directory --outdir output_directory
 ```
 
 For testing, please run:
 ```
-python test.py --task [dehaze | derain] --gpu_id [gpu_id] --indir [input directory] --outdir [output directory]
+python test.py --task task_name --gpu_id gpu_id --indir input_directory --outdir output_directory
 ```
 
 ## Results
