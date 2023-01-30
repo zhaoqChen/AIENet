@@ -42,7 +42,7 @@ python test.py --task task_name --gpu_id gpu_id --indir input_directory --outdir
 ```
 
 ## Results
-Experiments are performed for different image processing tasks including, image deblurring, image deraining and image denoising.
+Experiments are performed for different image enhancement tasks including, image dehazing, image motion deblurring and image compression deblurring.
 
 <p align="center"><img src = "https://github.com/zhaoqChen/AIENet/blob/main/imgs/quantitative comparisons.png" width="700"></p>
 
