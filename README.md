@@ -1,6 +1,6 @@
 # All-in-One Aerial Image Enhancement Network for  Forest Scenes
 
-Zhaoqi Chen, Chuansheng Wang, Fuquan Zhang, and Antoni Grau
+Zhaoqi Chen, Chuansheng Wang, Fuquan Zhang, Antoni Grau, and Edmundo Guerra
 
 <hr />
 
