@@ -28,14 +28,14 @@ pip install matplotlib scikit-image opencv-python tqdm
 ```
 
 ## Training and Evaluation
-Datasets used by AIENet can be downloaded from link: [https://pan.baidu.com/s/1YYXEikK2UVh-kMur0khacA](https://pan.baidu.com/s/1YYXEikK2UVh-kMur0khacA) with code 6mg9.
+Datasets used by AIENet can be downloaded from link: [https://pan.baidu.com/s/1-z1DAMrwnq1RW8ZTJVSe-A?pwd=lep6](https://pan.baidu.com/s/1-z1DAMrwnq1RW8ZTJVSe-A?pwd=lep6).
 
 To train the models of image dehazy, image motion deblur and image compression deblur on your own images, run 
 ```
 python train.py --task task_name --gpu_id gpu_id --indir input_directory --outdir output_directory
 ```
 
-For testing, please run:
+To test the [pre-trained models](https://pan.baidu.com/s/1nL-9AJY0OPiuDNwAXNDcuw?pwd=1i4j) on your own images, please run:
 ```
 python test.py --task task_name --gpu_id gpu_id --indir input_directory --outdir output_directory
 ```
